@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'LiveTrackingScreen.dart';
+import 'MiniMapCycler.dart';
 import 'TrackDetails.dart';
 
 class LoginPage extends StatefulWidget {
@@ -20,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
     if (username == "admin" && password == "1234") {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const LiveTrackingScreen()),
+        MaterialPageRoute(builder: (context) => const MiniMapCycler()),
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
